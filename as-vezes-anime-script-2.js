@@ -316,11 +316,11 @@ iniciar_radio();
 
 $(window).bind("scroll", function() {
 if ($(this).scrollTop() >= 500) {
- $("#Navbar1, #GO_TOP").fadeIn();
- $(".tabs-inner .widget ul, #CustomSearch1").stop().fadeOut();
+ $("#Navbar1, #GO_TOP").show();
+ $(".tabs-inner .widget ul, #CustomSearch1").stop().hide();
 } else {
- $("#Navbar1, #GO_TOP").stop().fadeOut();
- $(".tabs-inner .widget ul, #CustomSearch1").fadeIn();
+ $("#Navbar1, #GO_TOP").stop().hide();
+ $(".tabs-inner .widget ul, #CustomSearch1").show();
 }
 /*
 if ($(this).scrollTop() >= 2000) {
